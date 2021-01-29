@@ -1,0 +1,33 @@
+.header {
+    padding: 2.5rem 1.3125rem;
+
+    &__logo {
+        cursor: pointer;
+    }
+
+    &__links {
+        li {
+            margin-right: 1.9375rem;
+
+            a {
+                color: $veryDarkBlue;
+                font-size: 0.875rem;
+            }
+        }
+    }
+
+    &__toggle {
+        .line {
+            width: 30px;
+            height: 3px;
+            background: $veryDarkBlue;
+            cursor: pointer;
+
+            &:not(:last-child) {
+                margin-bottom: 4px;
+            }
+        }
+    }
+
+    &__button {}
+}
