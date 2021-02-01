@@ -22,10 +22,10 @@
         .review-2,
         .review-3,
         .review-4 {
-            opacity: 0;
+            display: none;
 
             @include breakpoint-up(large) {
-                opacity: 1;
+                display: block;
             }
         }
     }
@@ -91,7 +91,7 @@
 
     &__button {
         width: 70%;
-        margin: 3rem auto;
+        margin: 3rem auto 3rem;
 
         @include breakpoint-up(large) {
             width: 10%;

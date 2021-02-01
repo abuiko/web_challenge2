@@ -14,7 +14,7 @@ html {
 body {
   padding: 0;
   margin: 0;
-  font-family: "Be Vietnam", sans-serif;
+  font-family: "Roboto", sans-serif;
   height: 100%;
   width: 100%;
   font-size: 1rem;
@@ -70,6 +70,24 @@ a {
 .hero__button a,
 .reviews__button a {
   color: white;
+  font-weight: 700;
+  font-size: 0.9375rem;
+  display: block;
+  text-align: center;
+}
+
+.banner__button {
+  padding: 1.125rem 2.0625rem;
+  background: white;
+  border-radius: 40px;
+  -webkit-box-shadow: 0 8px 6px -6px #ffa18a;
+          box-shadow: 0 8px 6px -6px #ffa18a;
+  width: 50%;
+  margin: 2rem auto 0rem;
+}
+
+.banner__button a {
+  color: #f25f3a;
   font-weight: 700;
   font-size: 0.9375rem;
   display: block;
@@ -375,14 +393,14 @@ a {
 .reviews__content .review-2,
 .reviews__content .review-3,
 .reviews__content .review-4 {
-  opacity: 0;
+  display: none;
 }
 
 @media (min-width: 64em) {
   .reviews__content .review-2,
   .reviews__content .review-3,
   .reviews__content .review-4 {
-    opacity: 1;
+    display: block;
   }
 }
 
@@ -445,12 +463,24 @@ a {
 
 .reviews__button {
   width: 70%;
-  margin: 3rem auto;
+  margin: 3rem auto 3rem;
 }
 
 @media (min-width: 64em) {
   .reviews__button {
     width: 10%;
   }
+}
+
+.banner {
+  padding: 6.375rem 2.125rem;
+  background: #f25f3a;
+}
+
+.banner h2 {
+  color: white;
+  font-size: 2.4rem;
+  text-align: center;
+  margin: 0;
 }
 /*# sourceMappingURL=styles.css.map */

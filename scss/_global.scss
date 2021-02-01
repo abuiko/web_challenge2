@@ -13,7 +13,7 @@ html {
 body {
     padding: 0;
     margin: 0;
-    font-family: "Be Vietnam", sans-serif;
+    font-family: "Roboto", sans-serif;
     height: 100%;
     width: 100%;
     font-size: 1rem;
@@ -72,6 +72,23 @@ a {
         text-align: center
     }
 
+}
+
+.banner__button {
+    padding: 1.125rem 2.0625rem;
+    background: white;
+    border-radius: 40px;
+    box-shadow: 0 8px 6px -6px hsl(12, 100%, 77%);
+    width: 50%;
+    margin: 2rem auto 0rem;
+
+    a {
+        color: $brightRed;
+        font-weight: 700;
+        font-size: 0.9375rem;
+        display: block;
+        text-align: center
+    }
 }
 
 
