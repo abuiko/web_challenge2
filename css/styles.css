@@ -30,10 +30,22 @@ h2 {
   font-size: 1.6625rem;
 }
 
+@media (min-width: 64em) {
+  h2 {
+    font-size: 1.9rem;
+  }
+}
+
 h3 {
   font-weight: 600;
-  font-size: 0.8975rem;
+  font-size: 0.7475rem;
   color: #242d52;
+}
+
+@media (min-width: 64em) {
+  h3 {
+    font-size: 1.1rem;
+  }
 }
 
 ul {
@@ -241,13 +253,25 @@ a {
   }
 }
 
-.features {
-  padding: 1.5rem 1.6rem 3.3125rem;
+@media (min-width: 64em) {
+  .features {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .features__head {
+  padding: 1.5rem 1.6rem 3.3125rem;
   text-align: center;
   padding-bottom: 2.375rem;
+}
+
+@media (min-width: 64em) {
+  .features__head {
+    text-align: left;
+    margin-right: 8.5625rem;
+  }
 }
 
 .features__head h2 {
@@ -266,6 +290,16 @@ a {
   width: 90%;
 }
 
+@media (min-width: 64em) {
+  .features__head p {
+    font-size: 1rem;
+  }
+}
+
+.features__grid {
+  padding: 1rem;
+}
+
 .features__card {
   margin-bottom: 3.125rem;
 }
@@ -278,12 +312,24 @@ a {
   border-bottom-left-radius: 1.875rem;
 }
 
+@media (min-width: 64em) {
+  .features__card h3 {
+    background: none;
+  }
+}
+
 .features__card h3 span {
   color: white;
-  margin-right: 1rem;
+  margin-right: 0.5rem;
   background: #f25f3a;
-  padding: 0.75rem 1.625rem;
+  padding: 0.75rem 1.225rem;
   border-radius: 1.875rem;
+}
+
+@media (min-width: 64em) {
+  .features__card h3 span {
+    margin-right: 2rem;
+  }
 }
 
 .features__card p {
@@ -291,5 +337,12 @@ a {
   color: #9095a7;
   line-height: 2;
   margin-right: 1rem;
+}
+
+@media (min-width: 64em) {
+  .features__card p {
+    font-size: 0.9rem;
+    margin-left: 7.125rem;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
