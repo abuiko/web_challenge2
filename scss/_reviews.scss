@@ -1,0 +1,70 @@
+.reviews {
+    padding: 0 1rem;
+
+    @include breakpoint-up(medium) {
+        padding: 1.5rem 1.6rem 3.3125rem;
+
+    }
+
+    &__head {
+        margin-bottom: 3.75rem;
+        text-align: center;
+    }
+
+    &__content {
+        .dots {
+            margin-top: 1.1625rem;
+
+
+            .dot {
+                width: 9px;
+                border-radius: 50%;
+                height: 9px;
+                border: 1px solid $brightRed;
+                margin: 1rem;
+                cursor: pointer;
+
+
+            }
+
+            .dot.active {
+                background: $brightRed;
+            }
+
+        }
+    }
+
+    &__card {
+        text-align: center;
+        background: repeating-linear-gradient(white, white 15.9%, $veryLightgray 16.1%, $veryLightgray 100%);
+        padding: 1rem;
+
+        img,
+        h3,
+        p {
+            margin-bottom: 1.5625rem;
+        }
+
+        img {
+            width: 4.6875rem;
+        }
+
+        h3 {
+            font-size: 1.1rem;
+            letter-spacing: -0.9px;
+        }
+
+        p {
+            color: $darkGrayishBlue;
+            font-size: 0.875rem;
+            line-height: 1.9;
+        }
+
+
+    }
+
+    &__button {
+        width: 70%;
+        margin: 3rem auto;
+    }
+}
