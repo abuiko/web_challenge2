@@ -472,9 +472,26 @@ a {
   }
 }
 
+#banner {
+  background: #f25f3a;
+}
+
 .banner {
   padding: 6.375rem 2.125rem;
-  background: #f25f3a;
+}
+
+@media (min-width: 64em) {
+  .banner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 .banner h2 {
@@ -482,5 +499,20 @@ a {
   font-size: 2.4rem;
   text-align: center;
   margin: 0;
+}
+
+@media (min-width: 64em) {
+  .banner h2 {
+    font-size: 3rem;
+    width: 50%;
+    text-align: left;
+  }
+}
+
+@media (min-width: 64em) {
+  .banner__button {
+    width: 15%;
+    margin: 0;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
