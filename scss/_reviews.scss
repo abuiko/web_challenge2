@@ -12,32 +12,58 @@
     }
 
     &__content {
-        .dots {
-            margin-top: 1.1625rem;
-
-
-            .dot {
-                width: 9px;
-                border-radius: 50%;
-                height: 9px;
-                border: 1px solid $brightRed;
-                margin: 1rem;
-                cursor: pointer;
-
-
-            }
-
-            .dot.active {
-                background: $brightRed;
-            }
+        @include breakpoint-up(large) {
+            display: flex;
+            overflow: visible;
 
         }
+
+
+        .review-2,
+        .review-3,
+        .review-4 {
+            opacity: 0;
+
+            @include breakpoint-up(large) {
+                opacity: 1;
+            }
+        }
+    }
+
+    .dots {
+        margin-top: 1.1625rem;
+
+        @include breakpoint-up(large) {
+            margin-top: 3rem;
+        }
+
+
+        .dot {
+            width: 9px;
+            border-radius: 50%;
+            height: 9px;
+            border: 1px solid $brightRed;
+            margin: 1rem;
+            cursor: pointer;
+
+
+        }
+
+        .dot.active {
+            background: $brightRed;
+        }
+
     }
 
     &__card {
         text-align: center;
         background: repeating-linear-gradient(white, white 15.9%, $veryLightgray 16.1%, $veryLightgray 100%);
         padding: 1rem;
+
+        @include breakpoint-up(large) {
+            width: 550px;
+            margin-right: 2rem;
+        }
 
         img,
         h3,
@@ -66,5 +92,9 @@
     &__button {
         width: 70%;
         margin: 3rem auto;
+
+        @include breakpoint-up(large) {
+            width: 10%;
+        }
     }
 }
