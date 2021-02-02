@@ -137,17 +137,26 @@
 
         }
 
+        span:not(:last-child) {
+            margin-right: 1.3 rem;
+        }
+
         i {
-            font-size: 2.3rem;
+            font-size: 2rem;
             color: white;
-            margin-right: 1.7rem;
+
+
             cursor: pointer;
+
+
 
             @include breakpoint-up(large) {
                 font-size: 1.4rem;
                 margin-right: 0.4rem;
             }
         }
+
+
     }
 
     &__logo {

@@ -7,21 +7,31 @@
 .hero::before {
     content: '';
     position: absolute;
-    top: -35%;
-    right: -10%;
+    top: -30%;
+    right: 0;
     width: 20.625rem;
-    height: 100%;
+    height: 90%;
     background-image: url("/images/bg-tablet-pattern.svg");
     background-repeat: no-repeat;
     background-position: bottom top;
-    background-size: 150%;
+    background-size: 170%;
     z-index: -2;
+
+    @include breakpoint-up(medium) {
+        width: 40.625rem;
+        top: -45%;
+        right: 0%;
+        background-size: 110%;
+
+    }
+
+
 }
 
 .hero::after {
     content: '';
     position: absolute;
-    bottom: -20%;
+    bottom: -30%;
     right: -10%;
     width: 13.5rem;
     height: 70%;
@@ -30,6 +40,12 @@
     background-position: bottom top;
     background-size: 150%;
     z-index: -2;
+
+    @include breakpoint-up(medium) {
+        width: 20.625rem;
+        right: -30%;
+
+    }
 }
 
 
