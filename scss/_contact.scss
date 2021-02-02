@@ -4,6 +4,7 @@
 
 .banner {
     padding: 6.375rem 2.125rem;
+    position: relative;
 
 
     @include breakpoint-up(large) {
@@ -33,6 +34,20 @@
         }
     }
 
+}
+
+.banner::before {
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    top: 5rem;
+    left: -420px;
+    background-image: url('/images/bg-tablet-pattern.svg');
+    opacity: 0.2;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #contact {
