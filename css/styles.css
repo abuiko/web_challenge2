@@ -651,6 +651,10 @@ a {
   }
 }
 
+.banner__button:hover {
+  opacity: 0.8;
+}
+
 .banner::before {
   content: '';
   position: absolute;
@@ -803,6 +807,10 @@ a {
     font-size: 1.4rem;
     margin-right: 0.4rem;
   }
+}
+
+.contact__icons i:hover {
+  color: #f25f3a;
 }
 
 .contact__logo {

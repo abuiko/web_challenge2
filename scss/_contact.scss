@@ -32,6 +32,10 @@
             margin: 0;
 
         }
+
+        &:hover {
+            opacity: 0.8;
+        }
     }
 
 }
@@ -163,6 +167,10 @@
                 font-size: 1.4rem;
                 margin-right: 0.4rem;
             }
+        }
+
+        i:hover {
+            color: $brightRed;
         }
 
 
