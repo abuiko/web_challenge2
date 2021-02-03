@@ -61,6 +61,11 @@
             a {
                 color: $veryDarkBlue;
                 font-size: 0.875rem;
+                transition: all 200ms ease-in-out;
+            }
+
+            a:hover {
+                opacity: 0.6;
             }
         }
     }
