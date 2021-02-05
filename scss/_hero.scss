@@ -18,9 +18,11 @@
     z-index: -2;
 
     @include breakpoint-up(medium) {
-        width: 40.625rem;
+        width: 50.625rem;
         top: -45%;
-        right: 0%;
+        right: -30%;
+        height: 180%;
+        background-position: top center;
         background-size: 110%;
 
     }
@@ -42,8 +44,15 @@
     z-index: -2;
 
     @include breakpoint-up(medium) {
-        width: 20.625rem;
-        right: -30%;
+        bottom: -100%;
+        right: 100%;
+        width: 37.5rem;
+        height: 140%;
+
+        background-position: bottom center;
+        background-size: 100%;
+
+
 
     }
 }

@@ -274,9 +274,11 @@ a {
 
 @media (min-width: 40em) {
   .hero::before {
-    width: 40.625rem;
+    width: 50.625rem;
     top: -45%;
-    right: 0%;
+    right: -30%;
+    height: 180%;
+    background-position: top center;
     background-size: 110%;
   }
 }
@@ -297,8 +299,12 @@ a {
 
 @media (min-width: 40em) {
   .hero::after {
-    width: 20.625rem;
-    right: -30%;
+    bottom: -100%;
+    right: 100%;
+    width: 37.5rem;
+    height: 140%;
+    background-position: bottom center;
+    background-size: 100%;
   }
 }
 

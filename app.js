@@ -26,3 +26,6 @@ burger.addEventListener('click', () => {
         burger.classList.remove('open');
     }
 })
+
+
+// cards and dots
